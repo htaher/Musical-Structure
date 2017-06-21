@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="horizontal"
+    tools:context="com.example.android.m_struct.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/menu_home"
+                style="@style/MainButtons"
+                android:text="@string/menu_home" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/menu_discover"
+                style="@style/MainButtons"
+                android:text="@string/menu_discover" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/menu_playlist"
+                style="@style/MainButtons"
+                android:text="@string/menu_playlist" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/menu_radio"
+                style="@style/MainButtons"
+                android:text="@string/menu_radio_selected" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/DescriptionText"
+                        android:text="@string/radio_screen_description" />
+
+                    <ImageView
+                        style="@style/PlayerCoverArt"
+                        android:src="@drawable/album_cover_art" />
+
+                    <SeekBar style="@style/SeekBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/PlayerButton"
+                        android:src="@drawable/ic_skip_previous_48dp" />
+
+                    <ImageView
+                        style="@style/PlayerButton"
+                        android:src="@drawable/ic_play_circle_filled_64dp" />
+
+                    <ImageView
+                        style="@style/PlayerButton"
+                        android:src="@drawable/ic_skip_next_48dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

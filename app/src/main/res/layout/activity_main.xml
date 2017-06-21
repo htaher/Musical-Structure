@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="horizontal"
+    tools:context="com.example.android.m_struct.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/menu_home"
+                style="@style/MainButtons"
+                android:text="@string/menu_home_selected" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/menu_discover"
+                style="@style/MainButtons"
+                android:text="@string/menu_discover" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/menu_playlist"
+                style="@style/MainButtons"
+                android:text="@string/menu_playlist" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/menu_radio"
+                style="@style/MainButtons"
+                android:text="@string/menu_radio" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/DescriptionText"
+                    android:text="@string/home_screen_description" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/mslogo" />
+
+                <TextView
+                    style="@style/TiteText"
+                    android:text="@string/recommended" />
+
+                <View style="@style/SepLine" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/home_song_1"
+                            style="@style/CoverArtimage"
+                            android:contentDescription="@string/album_description"
+                            android:src="@drawable/album_cover_art" />
+
+                        <ImageView
+                            android:id="@+id/home_song_2"
+                            style="@style/CoverArtimage"
+                            android:contentDescription="@string/album_description"
+                            android:src="@drawable/album_cover_art" />
+
+                        <ImageView
+                            android:id="@+id/home_song_3"
+                            style="@style/CoverArtimage"
+                            android:contentDescription="@string/album_description"
+                            android:src="@drawable/album_cover_art" />
+
+                        <ImageView
+                            android:id="@+id/home_song_4"
+                            style="@style/CoverArtimage"
+                            android:contentDescription="@string/album_description"
+                            android:src="@drawable/album_cover_art" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

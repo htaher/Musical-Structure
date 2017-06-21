@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">M-Struct</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_discover">Discover</string>
+    <string name="menu_playlist">Playlist</string>
+    <string name="menu_radio">Radio</string>
+    <string name="menu_home_selected"><u>Home</u></string>
+    <string name="menu_discover_selected"><u>Discover</u></string>
+    <string name="menu_playlist_selected"><u>Playlist</u></string>
+    <string name="menu_radio_selected"><u>Radio</u></string>
+    <string name="play_screen">Play</string>
+    <string name="tracklist_screen">Tracklist</string>
+    <string name="recommended">Recommended for you</string>
+    <string name="playlist_title">Your Playlists</string>
+    <string name="discover_house">House</string>
+    <string name="discover_rock">Rock</string>
+    <string name="discover_tropical">Tropical</string>
+    <string name="playlistname1">Tropical Vibes</string>
+    <string name="playlistname2">Dance Party</string>
+    <string name="playlistname3">Chill Tracks</string>
+    <string name="playlistname4">New House</string>
+    <string name="tracklist_title">Tracklist</string>
+    <string name="player_artist_name">Artist Name</string>
+    <string name="player_song_name">Song Name</string>
+    <string name="album_description">Album cover art sample.</string>
+    <string name="home_screen_description">In the home screen, there is three parts. First we have the "menu"
+         that use intents for these three different activities: Discover, Playlist, Radio.\nSecond, we have the logo which is an ImageView.\nLast part is the "Recommended for you"
+         that show albums cover that use intents too.</string>
+    <string name="discover_screen_description">In the Discover screen, the user will be allows to discover new songs that are related to what he already like.\nThey 
+        are all grouped by genres/mood in horizontal scroll view. Each one has an intents for the play screen</string>
+    <string name="playlist_screen_description">In the Playlist screen, the user will see all the playlists created. Will be able to click on the playlist name to show the list. \nEach
+        one has an intents for the Music List screen.</string>
+    <string name="music_list_screen_description">In the Tracklist screen, the user will see all the tracks in a ListView.\nFor this ListView, we use a custom Adapter with a new Class</string>
+    <string name="player_screen_description">In the player screen, there is a media player that will be able de play any selected track, it will show the cover art, the artist name
+        and the song name. There is one SeekBar and 3 ImageView to control.This media player will use the Android MediaPlayer class to control playback of audio files and streams.</string>
+    <string name="radio_screen_description">In the radio screen, there is a media player that will be able de stream music from the cloud library.
+        This radio player will use the Android MediaPlayer class to control the audio stream.</string>
+</resources>
